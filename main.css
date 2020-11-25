@@ -1,0 +1,66 @@
+body, html {
+  width: 100%;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.custom-btn {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #000;
+  background-color: #fff;
+}
+
+.custom-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.custom-btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.left-btn, .right-btn {
+  padding: 0;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 0.5s linear infinite;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  z-index: 2;
+  margin: 0
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
