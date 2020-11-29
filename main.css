@@ -5,13 +5,14 @@ body, html {
 }
 
 button {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
 }
 
 .btn-container {
-  text-align: center;
-  margin: 0 auto;
+  position: fixed;
+  padding: 1rem 2rem 1rem 2rem;
+  right: 0px;
+  bottom: 0px;
 }
 
 .custom-btn {
@@ -22,6 +23,7 @@ button {
   border-width: 2px;
   border-color: #000;
   background-color: #fff;
+  margin: 0.5rem;
 }
 
 .custom-btn:hover {
@@ -32,10 +34,6 @@ button {
 .custom-btn:focus {
   box-shadow: none;
   outline: none;
-}
-
-.left-btn, .right-btn {
-  padding: 0;
 }
 
 .loader {
@@ -60,7 +58,18 @@ button {
   margin: 0
 }
 
+
+@-webkit-keyframes image_blur {
+  0% { -webkit-filter: blur(50px);}
+  50% { -webkit-filter: blur(50px);}
+  100% { -webkit-filter: blur(0px);}
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+#sketch-div {
+  -webkit-animation: image_blur 1.5s;
 }

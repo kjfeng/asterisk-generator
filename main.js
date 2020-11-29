@@ -22,7 +22,7 @@ function setup() {
   canvas = createCanvas(500, 500);
   canvas.parent('sketch-div');
   centerCanvas();
-  noLoop();
+  // noLoop();
 }
 
 function place() {
@@ -37,6 +37,10 @@ function place() {
 
 function draw() {
   place();
+  // img.rotate(PI / 180 * (10))
+  push();
+  img.filter(BLUR, 5)
+  pop();
   // x+= PI / 180 * (10)
   // translate (width/2, height/2);
   // rotate(x);
